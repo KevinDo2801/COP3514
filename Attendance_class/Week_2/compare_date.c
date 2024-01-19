@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // validate date entry
-void chech_date(int month, int day, int year)
+void check_date(int month, int day, int year)
 {
     int valid = 1;
     if (month < 1 || month > 12)
@@ -86,11 +86,11 @@ int main()
     int month1, day1, year1, month2, day2, year2;
     printf("Enter first date (mm/dd/yy): ");
     scanf("%d/%d/%d", &month1, &day1, &year1);
-    chech_date(month1, day1, year1);
+    check_date(month1, day1, year1);
 
     printf("Enter second date (mm/dd/yy): ");
     scanf("%d/%d/%d", &month2, &day2, &year2);
-    chech_date(month2, day2, year2);
+    check_date(month2, day2, year2);
 
     int result = compare_date(month1, day1, year1, month2, day2, year2);
     output(result, month1, day1, year1, month2, day2, year2);
