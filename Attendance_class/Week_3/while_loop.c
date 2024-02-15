@@ -16,12 +16,14 @@ int find_element(int a[], int n1, int b[], int n2, int c[]){
 
 int main()
 {
-    int a[3] = {1,2,3};
-    int b[4] = {3,2,6,7};
-    int c[5] = {0};
-    int n = find_element(a,3,b,4, c);
-    for(int i=0; i<n; i++){
-        printf("%d", c[i]);
+    int g = 3;
+    switch(g){
+        case 4: printf("ex");
+        case 3: printf("good"); 
+        case 2: printf("poor"); 
+        case 1: printf("failing"); 
+        case 0: printf("dad");
+        default: printf("asefacts");
     }
 
     return 0;

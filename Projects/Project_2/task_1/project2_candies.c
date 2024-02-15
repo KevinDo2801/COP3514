@@ -1,9 +1,19 @@
+// Kiet Tuan Do
+// 01/23/2024
+/*This C program simulates a candy vending machine, 
+accepting quarters, dimes, and nickels from the user. 
+After coin input (ending with a zero), it offers a candy choice: 
+Hershey’s Kisses (15 cents), Reese’s Cups (25 cents), or Snickers (50 cents). 
+The program checks if the input amount covers the candy cost, 
+then either dispenses the candy with change, or signals insufficient funds and returns the money.*/
+
 #include <stdio.h>
 
 #define HERSHEY_KISSES_PRICE 15
 #define REESE_PRICE 25
 #define SNICKERS_PRICE 50
 
+// check the amount and dispense the candy
 void checkAndDispense(int amount, int price)
 {
     if (amount < price)
@@ -21,6 +31,7 @@ int main()
     int amount = 0;
     int insert;
 
+    // insert coins
     do
     {
         printf("Insert coins: ");
@@ -34,6 +45,7 @@ int main()
     printf("Enter your choice: ");
     scanf("%d", &choice);
 
+    // check the choice
     switch (choice)
     {
     case 1:
